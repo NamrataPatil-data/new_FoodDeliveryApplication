@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    min-height: 100vh;
+    background: url("../images/index-bg.jpg") no-repeat center center/cover;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
+/* HERO */
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    max-width: 500px;
+    color: white;
+    animation: fadeUp 1s ease;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.hero-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 120, 0, 0.6);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* MAIN HEADLINE */
+.main-headline {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 52px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 5;
+    animation: fadeDown 1s ease;
+}
+
+.main-headline span {
+    color: #ff9800;
+}
+
+/* RIGHT CORNER QUOTE */
+.corner-quote {
+    position: absolute;
+    bottom: 140px;
+    right: 80px;
+    max-width: 260px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+
+/* HEADLINE ANIMATION */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -30px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+

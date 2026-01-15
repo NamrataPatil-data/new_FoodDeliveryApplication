@@ -1,0 +1,120 @@
+/* ================== PAGE BACKGROUND ================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+
+    background: url("../images/bg-food2.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================== MAIN WRAPPER ================== */
+
+.address-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================== CARD BOX ================== */
+
+.address-box {
+    width: 460px;
+    padding: 35px 40px;
+
+    background: rgba(255, 248, 235, 0.94);
+    backdrop-filter: blur(8px);
+
+    border-radius: 18px;
+    text-align: center;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+
+    animation: floatIn 0.9s ease;
+    transition: all 0.35s ease;
+}
+
+/* Hover effect */
+.address-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.45);
+}
+
+/* ================== HEADING ================== */
+
+.address-box h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #2d2d2d;
+}
+
+/* ================== INPUT FIELDS ================== */
+
+.address-box input,
+.address-box textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.address-box input:focus,
+.address-box textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.2);
+}
+
+/* ================== BUTTON ================== */
+
+.address-box button,
+.address-box input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: white;
+    background: linear-gradient(135deg, #ff6a00, #ffb347);
+
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+
+    box-shadow: 0 16px 35px rgba(255, 120, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.address-box button:hover,
+.address-box input[type="submit"]:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 22px 45px rgba(255, 120, 0, 0.8);
+}
+
+/* ================== ANIMATION ================== */
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
