@@ -27,8 +27,5 @@ Users can browse restaurants, view menus, add items to cart, and place orders.
 3. Setup MySQL database
 4. Run the project on server
 
-## 📸 Screenshots
-(Add screenshots here)
-
 ## 👩‍💻 Author
 Namrata Patil
